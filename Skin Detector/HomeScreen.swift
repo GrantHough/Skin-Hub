@@ -14,131 +14,49 @@ class AppViewModel: ObservableObject {
     
     let auth = Auth.auth()
     
-
-    @State private var alertIsShowing = false  // not using
     @Published var signedIn = false
-    @Published var realSignedIn = false
-    @State var alertMessage = "Something went wrong."
-    
-    @State var errString: String?
-    @Published var signInAlert = false
-    
-    @AppStorage("video1Completed") var video1Completed = false
-    @AppStorage("video2Completed") var video2Completed = false
-    @AppStorage("video3Completed") var video3Completed = false
-    @AppStorage("video4Completed") var video4Completed = false
-    @AppStorage("video5Completed") var video5Completed = false
-    @AppStorage("video6Completed") var video6Completed = false
-    @AppStorage("video7Completed") var video7Completed = false
-    @AppStorage("video8Completed") var video8Completed = false
-    @AppStorage("video9Completed") var video9Completed = false
-    @AppStorage("video10Completed") var video10Completed = false
-    @AppStorage("video11Completed") var video11Completed = false
-    @AppStorage("video12Completed") var video12Completed = false
-    @AppStorage("video13Completed") var video13Completed = false
-    
-    @AppStorage("marimbaVideo1Completed") var marimbaVideo1Completed = false
-    @AppStorage("marimbaVideo2Completed") var marimbaVideo2Completed = false
-    @AppStorage("marimbaVideo3Completed") var marimbaVideo3Completed = false
-    
-    @Published var resetAlert = false
-    @Published var completed = false
-    @Published var completed2 = false
-    @Published var completed3 = false
-    
     
     var isSignedIn: Bool {
         return auth.currentUser != nil
     }
     
-    func lessonsFinishing() {
-        
-        if video1Completed {
-            lessonsFinished = 1
-        }
-        
-    }
-    
-    func videoCompletion() {
-        if video1Completed {
-            lessonsFinished = 1
-        }
-        
-        if video2Completed {
-            lessonsFinished = 2
-        }
-        
-        if video3Completed {
-            lessonsFinished = 3
-        }
-    }
-    
-    
-    @Published var lessonsFinished: CGFloat = 0
-
-    func signIn(email: String, password: String) { //login
-        auth.signIn(withEmail: email, password: password) { [weak self] (result, error) in
-            
-      
-            
-            
-            DispatchQueue.main.async {
-                self?.signedIn = true
-            }
-            
-            if error != nil {
-                self?.alertMessage = error?.localizedDescription ?? ""
-                print("\(String(describing: error))")
-                
-                self?.errString = error?.localizedDescription
-                self?.signInAlert = true
-            }
-          
-            else {
-             
-                self?.signedIn = true
-                print("Signed In")
-                self?.realSignedIn = true
-              
-            }
-         
+    func signIn(email: String, password: String) {
+        auth.signIn(withEmail: email, password: password) { [weak self] result, error in
             guard result != nil, error == nil else {
-                self?.alertIsShowing = true
                 return
             }
             
-           
+            DispatchQueue.main.async {
+                self?.signedIn = true
+                print("Signed In")
+            }
+            
         }
     }
-    
     
     func signUp(email: String, password: String) {
         auth.createUser(withEmail: email, password: password) { [weak self] result, error in
-            
-            if error != nil {
-                self?.signInAlert = true
-            }
-            
-            
-            
             guard result != nil, error == nil else {
-                self?.alertIsShowing = true
                 return
             }
             
             DispatchQueue.main.async {
                 self?.signedIn = true
-                self?.realSignedIn = true
             }
             
         }
+    }
+    
+    func signOut() {
+        try? auth.signOut()
+        self.signedIn = false
     }
     
     func resetPassword(email: String, resetCompletion: @escaping (Result<Bool,Error>) -> Void) {
         Auth.auth().sendPasswordReset(withEmail: email, completion: { (error) in
             
             if error != nil {
-                self.resetAlert = true
+                
             }
             
             if let error = error {
@@ -148,34 +66,50 @@ class AppViewModel: ObservableObject {
             }
         })
     }
-
     
-    func signOut() {
-        try? auth.signOut()
-        
-        self.realSignedIn = false
-    }
-
 }
 
-
 struct HomeScreen: View {
-
+    
     @EnvironmentObject var viewModel: AppViewModel
     
     var body: some View {
         NavigationView {
-            if viewModel.realSignedIn {
-                Text("sdf")
+            VStack {
+                HStack (alignment: .center) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (alignment: .center) {
+                            
+                            DiseaseCard(title: "Chicken Pox", titleSize: 30, description: "tonight", descriptionSize: 20, imageName: "ChickenPox", imageWidth: UIScreen.main.bounds.width * 0.56, imageHeight: UIScreen.main.bounds.height * 0.18, width: UIScreen.main.bounds.width * 0.56, height: UIScreen.main.bounds.height * 0.28, cornerRadius: 20, color: Color(#colorLiteral(red: 0.9803074002, green: 0.5563108325, blue: 0.598035574, alpha: 1)))
+                            
+                        }
+                       
+                    }
+                    .frame(height: UIScreen.main.bounds.height * 0.3)
+                    .ignoresSafeArea()
+                }
+                .padding()
+                
+                Button(action: {
+                    
+                    viewModel.signOut()
+                    
+                }, label: {
+                    Text("Sign Out")
+                        .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.width * 0.13)
+                        .background(Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(0.8))
+                        .foregroundColor(Color(.white).opacity(0.65))
+                        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                        .font(.system(size: 18, weight: .semibold))
+                        .cornerRadius(10)
+                        .padding(0.8)
+                        .shadow(color: Color.black.opacity(0.3), radius: 15, x: 0, y: 15)
+                })
+                .padding()
             }
-            else {
-                TitleScreen()
-            }
-        }
-        .onAppear {
-            viewModel.realSignedIn = viewModel.isSignedIn
         }
     }
+    
 }
 
 struct HomeScreen_Previews: PreviewProvider {

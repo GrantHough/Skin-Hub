@@ -10,6 +10,8 @@ import Firebase
 import FirebaseAuth
 @main
 
+
+
 struct Skin_DetectorApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate

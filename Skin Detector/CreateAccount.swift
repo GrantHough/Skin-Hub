@@ -8,9 +8,7 @@
 import SwiftUI
 import Firebase
 
-
 struct CreateAccount: View {
-    
     
     @State var email = ""
     @State var password = ""
@@ -22,11 +20,7 @@ struct CreateAccount: View {
             VStack {
                 ZStack {
                 
-                    
                     VStack {
-                        
-                        Spacer()
-                            .frame(height: UIScreen.main.bounds.width * 0.1)
                         
                         Text("Let's Get Started")
                             .fontWeight(.bold)
@@ -85,7 +79,7 @@ struct CreateAccount: View {
                         }) //add alerts later
                         
                         Spacer()
-                            .frame(height: UIScreen.main.bounds.width * 0.35)
+                            .frame(height: UIScreen.main.bounds.height * 0.25)
                     }
                 }
             }
