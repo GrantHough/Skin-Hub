@@ -3,23 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B883251887F6795E49B4C71 /* Pods_Skin_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DE446B12C75D8B4BDC46C2 /* Pods_Skin_Detector.framework */; };
+		5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830F9FC27756372005BEE35 /* HomeScreen.swift */; };
+		5830F9FF277579DE005BEE35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */; };
 		5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3BE2775226B00F2E7E9 /* Skin_DetectorApp.swift */; };
-		5886F3C12775226B00F2E7E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3C02775226B00F2E7E9 /* ContentView.swift */; };
 		5886F3C32775226C00F2E7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5886F3C22775226C00F2E7E9 /* Assets.xcassets */; };
 		5886F3C62775226C00F2E7E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5886F3C52775226C00F2E7E9 /* Preview Assets.xcassets */; };
+		5886F3CE2775230A00F2E7E9 /* TitleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3CD2775230A00F2E7E9 /* TitleScreen.swift */; };
+		5886F3D0277531B500F2E7E9 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3CF277531B400F2E7E9 /* CreateAccount.swift */; };
+		5886F3D2277531C300F2E7E9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3D1277531C300F2E7E9 /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5830F9FC27756372005BEE35 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5886F3BB2775226B00F2E7E9 /* Skin Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skin Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5886F3BE2775226B00F2E7E9 /* Skin_DetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin_DetectorApp.swift; sourceTree = "<group>"; };
-		5886F3C02775226B00F2E7E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5886F3C22775226C00F2E7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5886F3C52775226C00F2E7E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5886F3C72775226C00F2E7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5886F3CD2775230A00F2E7E9 /* TitleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreen.swift; sourceTree = "<group>"; };
+		5886F3CF277531B400F2E7E9 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		5886F3D1277531C300F2E7E9 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		70DE446B12C75D8B4BDC46C2 /* Pods_Skin_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skin_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		904798412FA4D14F55BB007E /* Pods-Skin Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skin Detector.debug.xcconfig"; path = "Target Support Files/Pods-Skin Detector/Pods-Skin Detector.debug.xcconfig"; sourceTree = "<group>"; };
+		EE4E10F8E4E3949D97007612 /* Pods-Skin Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skin Detector.release.xcconfig"; path = "Target Support Files/Pods-Skin Detector/Pods-Skin Detector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B883251887F6795E49B4C71 /* Pods_Skin_Detector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4428E739B461C6E2F32F84AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DE446B12C75D8B4BDC46C2 /* Pods_Skin_Detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5886F3B22775226A00F2E7E9 = {
 			isa = PBXGroup;
 			children = (
 				5886F3BD2775226B00F2E7E9 /* Skin Detector */,
 				5886F3BC2775226B00F2E7E9 /* Products */,
+				70DEFFA5267346753A98AFB7 /* Pods */,
+				4428E739B461C6E2F32F84AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +76,13 @@
 			isa = PBXGroup;
 			children = (
 				5886F3BE2775226B00F2E7E9 /* Skin_DetectorApp.swift */,
-				5886F3C02775226B00F2E7E9 /* ContentView.swift */,
+				5886F3CD2775230A00F2E7E9 /* TitleScreen.swift */,
+				5886F3CF277531B400F2E7E9 /* CreateAccount.swift */,
+				5886F3D1277531C300F2E7E9 /* SignIn.swift */,
+				5830F9FC27756372005BEE35 /* HomeScreen.swift */,
 				5886F3C22775226C00F2E7E9 /* Assets.xcassets */,
 				5886F3C72775226C00F2E7E9 /* Info.plist */,
+				5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */,
 				5886F3C42775226C00F2E7E9 /* Preview Content */,
 			);
 			path = "Skin Detector";
@@ -69,6 +96,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		70DEFFA5267346753A98AFB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				904798412FA4D14F55BB007E /* Pods-Skin Detector.debug.xcconfig */,
+				EE4E10F8E4E3949D97007612 /* Pods-Skin Detector.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5886F3CA2775226C00F2E7E9 /* Build configuration list for PBXNativeTarget "Skin Detector" */;
 			buildPhases = (
+				E8BEC703C0D1791F3A15DDD9 /* [CP] Check Pods Manifest.lock */,
 				5886F3B72775226A00F2E7E9 /* Sources */,
 				5886F3B82775226A00F2E7E9 /* Frameworks */,
 				5886F3B92775226A00F2E7E9 /* Resources */,
+				0A8B9770260B8E275F3C2166 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +165,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				5886F3C62775226C00F2E7E9 /* Preview Assets.xcassets in Resources */,
+				5830F9FF277579DE005BEE35 /* GoogleService-Info.plist in Resources */,
 				5886F3C32775226C00F2E7E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A8B9770260B8E275F3C2166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skin Detector/Pods-Skin Detector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skin Detector/Pods-Skin Detector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skin Detector/Pods-Skin Detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8BEC703C0D1791F3A15DDD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skin Detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5886F3B72775226A00F2E7E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5886F3C12775226B00F2E7E9 /* ContentView.swift in Sources */,
 				5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */,
+				5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */,
+				5886F3D0277531B500F2E7E9 /* CreateAccount.swift in Sources */,
+				5886F3CE2775230A00F2E7E9 /* TitleScreen.swift in Sources */,
+				5886F3D2277531C300F2E7E9 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +348,7 @@
 		};
 		5886F3CB2775226C00F2E7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904798412FA4D14F55BB007E /* Pods-Skin Detector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +371,7 @@
 		};
 		5886F3CC2775226C00F2E7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4E10F8E4E3949D97007612 /* Pods-Skin Detector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

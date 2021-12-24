@@ -1,0 +1,6 @@
+framework module Pods_Skin_Detector {
+  umbrella header "Pods-Skin Detector-umbrella.h"
+
+  export *
+  module * { export * }
+}
