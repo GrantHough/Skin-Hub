@@ -18,9 +18,7 @@ struct ForgotPassword: View {
         NavigationView {
             VStack {
                 ZStack {
-                
                     VStack {
-                        
                         Text("Reset Password")
                             .fontWeight(.bold)
                             .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))

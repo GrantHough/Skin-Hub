@@ -75,19 +75,37 @@ struct HomeScreen: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            
+            VStack (spacing: 0) {
+                
+                Text("Variations of\nSkin Conditions")
+                    .fontWeight(.bold)
+                    .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))
+                    .foregroundColor(Color(.black).opacity(0.8))
+                    .multilineTextAlignment(.center)
+                
                 HStack (alignment: .center) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (alignment: .center) {
-                            
-                            DiseaseCard(title: "Chicken Pox", titleSize: 30, description: "tonight", descriptionSize: 20, imageName: "ChickenPox", imageWidth: UIScreen.main.bounds.width * 0.56, imageHeight: UIScreen.main.bounds.height * 0.18, width: UIScreen.main.bounds.width * 0.56, height: UIScreen.main.bounds.height * 0.28, cornerRadius: 20, color: Color(#colorLiteral(red: 0.9803074002, green: 0.5563108325, blue: 0.598035574, alpha: 1)))
-                            
+                            ActinicKeratosis()
+                                .padding(.leading)
+                            BasalCellCarcinoma()
+                            Dermatofibroma()
+                            Melanoma()
+                            Nevus()
+                            SeborrheicKeratosis()
+                            SquamousCellCarcinoma()
+                            VascularLesion()
                         }
-                       
+                        
                     }
+                    .cornerRadius(20)
                     .frame(height: UIScreen.main.bounds.height * 0.3)
                     .ignoresSafeArea()
+                    .background(Color.black.opacity(0.1))
+                    .shadow(radius: 20)
                 }
+                .cornerRadius(20)
                 .padding()
                 
                 Button(action: {
@@ -105,9 +123,10 @@ struct HomeScreen: View {
                         .padding(0.8)
                         .shadow(color: Color.black.opacity(0.3), radius: 15, x: 0, y: 15)
                 })
-                .padding()
+                
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }
