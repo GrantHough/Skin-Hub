@@ -24,7 +24,7 @@ struct CreateAccount: View {
                         
                         Text("Let's Get Started")
                             .fontWeight(.bold)
-                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))
+                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold))
                             .foregroundColor(Color(.black).opacity(0.8))
                         
                         Image("MakeshiftLogo")
@@ -79,7 +79,7 @@ struct CreateAccount: View {
                         }) //add alerts later
                         
                         Spacer()
-                            .frame(height: UIScreen.main.bounds.height * 0.25)
+                            .frame(height: UIScreen.main.bounds.height * 0.15)
                     }
                 }
             }

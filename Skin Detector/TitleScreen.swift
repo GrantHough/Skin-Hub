@@ -23,10 +23,10 @@ struct TitleScreen: View {
             else {
                 VStack{
                     
-                    Text("Excellent Title")
+                    Text("Skin Hub")
                         .fontWeight(.bold)
                         .padding(2)
-                        .font(.system(size: UIScreen.main.bounds.width * 0.2, weight: .bold, design: .rounded))
+                        .font(.system(size: UIScreen.main.bounds.width * 0.2, weight: .bold))
                         .foregroundColor(Color(.black).opacity(0.8))
                     
                     Image("MakeshiftLogo")

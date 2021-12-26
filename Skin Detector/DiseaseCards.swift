@@ -20,7 +20,7 @@ struct ActinicKeratosis: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -81,7 +81,7 @@ struct BasalCellCarcinoma: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -141,7 +141,7 @@ struct Dermatofibroma: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -200,7 +200,7 @@ struct Melanoma: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -259,7 +259,7 @@ struct Nevus: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -317,7 +317,7 @@ struct PigmentedBenignKeratosis: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -376,7 +376,7 @@ struct SeborrheicKeratosis: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -437,7 +437,7 @@ struct SquamousCellCarcinoma: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -497,7 +497,7 @@ struct VascularLesion: View {
     var width: CGFloat = UIScreen.main.bounds.width * 0.8
     var height: CGFloat = UIScreen.main.bounds.height * 0.28
     var cornerRadius: CGFloat = 20
-    var color = Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1))
+    var color = (Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(1))
     
     var body: some View {
         ZStack {
@@ -512,7 +512,7 @@ struct VascularLesion: View {
                     .frame(height: UIScreen.main.bounds.height * 0.04)
                 
                 Text(title)
-                    .font(.system(size: titleSize, weight: .bold, design: .rounded))
+                    .font(.system(size: titleSize, weight: .bold))
                     .padding(.top)
                 
                 Image(imageName)

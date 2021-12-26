@@ -17,6 +17,10 @@
 		580674812777DD1D0078D9C2 /* ImageDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674802777DD1D0078D9C2 /* ImageDetector.swift */; };
 		580674832777E2BF0078D9C2 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674822777E2BF0078D9C2 /* Classifier.swift */; };
 		580674872777E4C60078D9C2 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674862777E4C60078D9C2 /* ImageClassifier.swift */; };
+		58067489277814AD0078D9C2 /* OldHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58067488277814AD0078D9C2 /* OldHomeScreen.swift */; };
+		5806748B277815570078D9C2 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806748A277815570078D9C2 /* InfoPage.swift */; };
+		5806748D27781B1C0078D9C2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806748C27781B1C0078D9C2 /* Settings.swift */; };
+		5822737B277826EF00156F39 /* Weirdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822737A277826EF00156F39 /* Weirdf.swift */; };
 		5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830F9FC27756372005BEE35 /* HomeScreen.swift */; };
 		5830F9FF277579DE005BEE35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */; };
 		5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3BE2775226B00F2E7E9 /* Skin_DetectorApp.swift */; };
@@ -37,6 +41,10 @@
 		580674802777DD1D0078D9C2 /* ImageDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetector.swift; sourceTree = "<group>"; };
 		580674822777E2BF0078D9C2 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		580674862777E4C60078D9C2 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		58067488277814AD0078D9C2 /* OldHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldHomeScreen.swift; sourceTree = "<group>"; };
+		5806748A277815570078D9C2 /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		5806748C27781B1C0078D9C2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5822737A277826EF00156F39 /* Weirdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weirdf.swift; sourceTree = "<group>"; };
 		5830F9FC27756372005BEE35 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5886F3BB2775226B00F2E7E9 /* Skin Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skin Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,11 +108,15 @@
 				5886F3CF277531B400F2E7E9 /* CreateAccount.swift */,
 				5886F3D1277531C300F2E7E9 /* SignIn.swift */,
 				58067474277656A20078D9C2 /* ForgotPassword.swift */,
+				58067488277814AD0078D9C2 /* OldHomeScreen.swift */,
 				5830F9FC27756372005BEE35 /* HomeScreen.swift */,
+				5806748A277815570078D9C2 /* InfoPage.swift */,
 				58067478277662680078D9C2 /* DiseaseCards.swift */,
 				5806747A2776E74F0078D9C2 /* CancerInfoPages.swift */,
 				580674802777DD1D0078D9C2 /* ImageDetector.swift */,
 				580674862777E4C60078D9C2 /* ImageClassifier.swift */,
+				5806748C27781B1C0078D9C2 /* Settings.swift */,
+				5822737A277826EF00156F39 /* Weirdf.swift */,
 				5806747C2777D78D0078D9C2 /* SkinAI.mlmodel */,
 				5806747E2777DAE90078D9C2 /* ImagePicker.swift */,
 				5886F3C72775226C00F2E7E9 /* Info.plist */,
@@ -252,11 +264,15 @@
 				580674812777DD1D0078D9C2 /* ImageDetector.swift in Sources */,
 				5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */,
 				580674832777E2BF0078D9C2 /* Classifier.swift in Sources */,
+				5806748B277815570078D9C2 /* InfoPage.swift in Sources */,
 				5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */,
 				580674872777E4C60078D9C2 /* ImageClassifier.swift in Sources */,
 				5886F3D0277531B500F2E7E9 /* CreateAccount.swift in Sources */,
+				5822737B277826EF00156F39 /* Weirdf.swift in Sources */,
 				5886F3CE2775230A00F2E7E9 /* TitleScreen.swift in Sources */,
+				5806748D27781B1C0078D9C2 /* Settings.swift in Sources */,
 				5886F3D2277531C300F2E7E9 /* SignIn.swift in Sources */,
+				58067489277814AD0078D9C2 /* OldHomeScreen.swift in Sources */,
 				5806747F2777DAE90078D9C2 /* ImagePicker.swift in Sources */,
 				5806747D2777D78D0078D9C2 /* SkinAI.mlmodel in Sources */,
 				58067475277656A20078D9C2 /* ForgotPassword.swift in Sources */,
@@ -393,7 +409,7 @@
 				DEVELOPMENT_TEAM = ZC9M5VV47F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Skin Detector/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,7 +432,7 @@
 				DEVELOPMENT_TEAM = ZC9M5VV47F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Skin Detector/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

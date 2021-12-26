@@ -21,7 +21,7 @@ struct ForgotPassword: View {
                     VStack {
                         Text("Reset Password")
                             .fontWeight(.bold)
-                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))
+                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold))
                             .foregroundColor(Color(.black).opacity(0.8))
                         
                         Image("MakeshiftLogo")

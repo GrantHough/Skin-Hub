@@ -27,7 +27,7 @@ struct SignIn: View {
                         
                         Text("Welcome Back")
                             .fontWeight(.bold)
-                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))
+                            .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold))
                             .foregroundColor(Color(.black).opacity(0.8))
                         
                         Image("MakeshiftLogo")
@@ -90,7 +90,7 @@ struct SignIn: View {
                         
                         
                         Spacer()
-                            .frame(height: UIScreen.main.bounds.height * 0.25)
+                            .frame(height: UIScreen.main.bounds.height * 0.15)
                         
                     }
                     .padding()
