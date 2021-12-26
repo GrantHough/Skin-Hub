@@ -340,7 +340,7 @@ struct Eight: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.6120170951, blue: 0.538652122, alpha: 1)))
-                    .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.57)
+                    .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.58)
                     .opacity(0.7)
                     .shadow(radius: 20)
                 
@@ -348,7 +348,7 @@ struct Eight: View {
                     .padding()
                 
             }
-            .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.57)
+            .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.58)
             
             Spacer()
                 .frame(height: UIScreen.main.bounds.height * 0.1)

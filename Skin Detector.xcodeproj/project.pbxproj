@@ -12,6 +12,11 @@
 		5806747727765CF20078D9C2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5806747627765CF20078D9C2 /* Launch Screen.storyboard */; };
 		58067479277662680078D9C2 /* DiseaseCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58067478277662680078D9C2 /* DiseaseCards.swift */; };
 		5806747B2776E74F0078D9C2 /* CancerInfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806747A2776E74F0078D9C2 /* CancerInfoPages.swift */; };
+		5806747D2777D78D0078D9C2 /* SkinAI.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5806747C2777D78D0078D9C2 /* SkinAI.mlmodel */; };
+		5806747F2777DAE90078D9C2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5806747E2777DAE90078D9C2 /* ImagePicker.swift */; };
+		580674812777DD1D0078D9C2 /* ImageDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674802777DD1D0078D9C2 /* ImageDetector.swift */; };
+		580674832777E2BF0078D9C2 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674822777E2BF0078D9C2 /* Classifier.swift */; };
+		580674872777E4C60078D9C2 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580674862777E4C60078D9C2 /* ImageClassifier.swift */; };
 		5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830F9FC27756372005BEE35 /* HomeScreen.swift */; };
 		5830F9FF277579DE005BEE35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */; };
 		5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5886F3BE2775226B00F2E7E9 /* Skin_DetectorApp.swift */; };
@@ -27,6 +32,11 @@
 		5806747627765CF20078D9C2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		58067478277662680078D9C2 /* DiseaseCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseCards.swift; sourceTree = "<group>"; };
 		5806747A2776E74F0078D9C2 /* CancerInfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerInfoPages.swift; sourceTree = "<group>"; };
+		5806747C2777D78D0078D9C2 /* SkinAI.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SkinAI.mlmodel; sourceTree = "<group>"; };
+		5806747E2777DAE90078D9C2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = SOURCE_ROOT; };
+		580674802777DD1D0078D9C2 /* ImageDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetector.swift; sourceTree = "<group>"; };
+		580674822777E2BF0078D9C2 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		580674862777E4C60078D9C2 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 		5830F9FC27756372005BEE35 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5886F3BB2775226B00F2E7E9 /* Skin Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skin Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +103,12 @@
 				5830F9FC27756372005BEE35 /* HomeScreen.swift */,
 				58067478277662680078D9C2 /* DiseaseCards.swift */,
 				5806747A2776E74F0078D9C2 /* CancerInfoPages.swift */,
+				580674802777DD1D0078D9C2 /* ImageDetector.swift */,
+				580674862777E4C60078D9C2 /* ImageClassifier.swift */,
+				5806747C2777D78D0078D9C2 /* SkinAI.mlmodel */,
+				5806747E2777DAE90078D9C2 /* ImagePicker.swift */,
 				5886F3C72775226C00F2E7E9 /* Info.plist */,
+				580674822777E2BF0078D9C2 /* Classifier.swift */,
 				5830F9FE277579DE005BEE35 /* GoogleService-Info.plist */,
 				5886F3C42775226C00F2E7E9 /* Preview Content */,
 			);
@@ -234,11 +249,16 @@
 			files = (
 				5806747B2776E74F0078D9C2 /* CancerInfoPages.swift in Sources */,
 				58067479277662680078D9C2 /* DiseaseCards.swift in Sources */,
+				580674812777DD1D0078D9C2 /* ImageDetector.swift in Sources */,
 				5886F3BF2775226B00F2E7E9 /* Skin_DetectorApp.swift in Sources */,
+				580674832777E2BF0078D9C2 /* Classifier.swift in Sources */,
 				5830F9FD27756372005BEE35 /* HomeScreen.swift in Sources */,
+				580674872777E4C60078D9C2 /* ImageClassifier.swift in Sources */,
 				5886F3D0277531B500F2E7E9 /* CreateAccount.swift in Sources */,
 				5886F3CE2775230A00F2E7E9 /* TitleScreen.swift in Sources */,
 				5886F3D2277531C300F2E7E9 /* SignIn.swift in Sources */,
+				5806747F2777DAE90078D9C2 /* ImagePicker.swift in Sources */,
+				5806747D2777D78D0078D9C2 /* SkinAI.mlmodel in Sources */,
 				58067475277656A20078D9C2 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

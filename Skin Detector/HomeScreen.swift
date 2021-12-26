@@ -8,7 +8,7 @@
 import SwiftUI
 import Firebase
 import FirebaseAuth
-
+import CoreML
 
 class AppViewModel: ObservableObject {
     
@@ -78,6 +78,18 @@ struct HomeScreen: View {
             
             VStack (spacing: 0) {
                 
+                NavigationLink (destination: ImageDetector(classifier: ImageClassifier())) {
+                    Text("Go to Detector")
+                        .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.width * 0.13)
+                        .background(Color(#colorLiteral(red: 0.9777018428, green: 0.5183423758, blue: 0.5577222705, alpha: 1)).opacity(0.8))
+                        .foregroundColor(Color(.white).opacity(0.65))
+                        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                        .font(.system(size: 18, weight: .semibold))
+                        .cornerRadius(10)
+                        .padding(0.8)
+                        .shadow(color: Color.black.opacity(0.3), radius: 15, x: 0, y: 15)
+                }
+                
                 Text("Variations of\nSkin Conditions")
                     .fontWeight(.bold)
                     .font(.system(size: UIScreen.main.bounds.width * 0.11, weight: .bold, design: .rounded))
@@ -125,11 +137,14 @@ struct HomeScreen: View {
                 })
                 
             }
+            
+            Spacer()
+        
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-    
 }
+
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
